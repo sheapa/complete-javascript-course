@@ -20,7 +20,7 @@ console.log(firstName, lastName);
 /* SECTION 1 HW  */
 let myCountry = "United States";
 let myContinent = "North America";
-let myCountryPopulation = "331.42 (in millions)";
+let myCountryPopulation = 331.42;
 
 console.log(myCountry, myContinent, myCountryPopulation);
 
@@ -106,3 +106,70 @@ job = "teacher";
 console.log(job);
 
 // Always Declare variables
+
+/* Lecture 1.4 Operators */
+
+// $ Mathmatical Operators
+const now = 2021;
+const agePatrick = now - 1989;
+const ageGeorge = now - 2005;
+console.log(agePatrick, ageGeorge);
+
+console.log(agePatrick * 2, agePatrick / 10, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 2 * 2 * 2
+
+// concatenate - link (things) together in a chain or series
+const girlFirstName = "Sophie";
+const girlLastName = "Shea";
+console.log(girlFirstName + " " + girlLastName);
+
+// $ Assignment operators
+let x = 10 + 5; // = 15
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x++; // x = x + 1 = 101
+x--; // x = x - 1 = 100
+console.log(x);
+console.log(x / 2);
+
+// $ Comparison Operators
+console.log(agePatrick > ageGeorge); // >, <, >=, <=
+console.log(agePatrick >= 65); // >, <, >=, <=
+
+const isRetirementAge = agePatrick >= 65;
+console.log(isRetirementAge);
+
+console.log("Patrick is older?", now - agePatrick < now - ageGeorge);
+
+/* Part 1.4 HW */
+
+let halfCountry = myCountryPopulation / 2;
+console.log("Half of the " + myCountry + " is " + halfCountry);
+let halfPlusOne = ++halfCountry;
+console.log("What is Half the USA population plus one? ", halfPlusOne);
+let finlandPopulation = 33;
+console.log(
+  "Does the USA have a higher population than Finland? ",
+  myCountryPopulation > finlandPopulation
+);
+let averageCountryPop = 33;
+console.log(
+  "Does the USA have a larger than average population? ",
+  myCountryPopulation >= averageCountryPop
+);
+let description =
+  "Portugal is in Europe, and it's 11 million people speak Portuguese.";
+console.log(description);
+
+/* Operator Precedence Lecture 1.5 */
+// See MDN Operator Precedents Index https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+console.log(2 - 10 - 5);
+
+let w, z;
+w = z = 25 - 10 - 5; // x = y = 10
+console.log(w, z);
+
+//PEMDAS
+const averageAge = (agePatrick + ageGeorge) / 2;
+console.log(agePatrick, ageGeorge, averageAge);
